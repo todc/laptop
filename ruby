@@ -12,7 +12,7 @@ echo "Installing the Taps gem to push and pull SQL databases between development
   gem install taps --no-rdoc --no-ri
 
 echo "Installing the mysql2 gem to talk to MySQL databases ..."
-  gem install mysql2 --no-rdoc --no-ri
+  gem install mysql2 --no-rdoc --no-ri --version '~> 0.2.11'
 
 echo "Installing Capistrano gem for automated deployments ..."
   gem install capistrano--no-rdoc --no-ri
