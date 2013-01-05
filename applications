@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+
+#
+# Firefox
+#
+curl -o /tmp/firefox.dmg -L https://download.mozilla.org/?product=firefox-latest\&os=osx\&lang=en-US
+hdiutil attach /tmp/firefox.dmg
+cp -r /Volumes/Firefox/Firefox.app /Applications/
+hdiutil detach /Volumes/Firefox
+rm -f /tmp/firefox.dmg
+
+#
+# Chrome
+#
+curl -o /tmp/chrome.dmg -L https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg
+hdiutil attach /tmp/chrome.dmg
+cp -r /Volumes/Google\ Chrome/Google\ Chrome.app /Applications/
+hdiutil detach /Volumes/Google\ Chrome/
+rm -f /tmp/chrome.dmg
+
+# AdBlock
+# LastPass
+
+# IntelliJ IDEA 12
+# Sublime Text 2
+# Adobe Creative Cloud
+# xScope
+# iTerm
+# Dropbox
+# nvALT
+# TotalFinder
+# iWork
+# SnagIt
+# LaunchBar
+# SourceTree
+# Aqua Data Studio
+# VMWare Fusion
