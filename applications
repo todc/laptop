@@ -21,6 +21,15 @@ rm -f /tmp/chrome.dmg
 # AdBlock
 # LastPass
 
+#
+# Dropbox
+#
+curl -o /tmp/dropbox.dmg -L https://www.dropbox.com/download?plat=mac
+hdiutil attach /tmp/dropbox.dmg
+cp -r /Volumes/Dropbox\ Installer/Google\ Chrome.app /Applications/
+hdiutil detach /Volumes/Google\ Chrome/
+rm -f /tmp/chrome.dmg
+
 # IntelliJ IDEA 12
 # Sublime Text 2
 # Adobe Creative Cloud
@@ -35,3 +44,9 @@ rm -f /tmp/chrome.dmg
 # SourceTree
 # Aqua Data Studio
 # VMWare Fusion
+# Node/NPM
+# - lessc
+# - recess
+# - connect
+# - uglify-js
+# - jshint
